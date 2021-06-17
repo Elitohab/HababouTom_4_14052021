@@ -1,6 +1,6 @@
 /* Taille police ajustée */
 p{
-    font-size: 15px;
+    font-size: 17px;
 }
 
 /* Contraste des textes augmenté */
@@ -9,13 +9,17 @@ p{
 }
 
 /* "Citation bas de page pour projet" */
-#bloc-5-cta {
-    background-color: black; 
+#bloc-3-what-i-do h2 {
+    background-color: rgb(27, 27, 27);
+    opacity: 0.7;
 }
 
 /* Opacité texture papier diminuée */
-#bloc-5-cta.texture-paper::before{
-    opacity: 0.5;
+
+#bloc-5-cta h2 {
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 5%;
 }
 
 /* Centrer images portfolio version mobile */
@@ -23,6 +27,8 @@ p{
 @media (max-width: 767px){
     .portfolio-thumb{
         margin: auto;
+        width: 400px;
+        height: 400px;
     }
 }
 
@@ -37,7 +43,7 @@ p{
 
 #bloc-8 .col-sm-4{
     color: #424242!important;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 #bloc-8 .col-sm-4 ul{
@@ -50,15 +56,18 @@ p{
 
 
 /* Page Contact */
-
+#bloc-7{
+    text-align: center;
+}
 /* Contraste couleurs */
 
 #bloc-6 h1{
-    color: #424242!important;
+    color: #1b1a1a!important;
 }
 
 #bloc-6 p{
-    color: #424242!important;
+    color: #020202!important;
+    font-size: bold;
 }
 
 /* Position adresse */
@@ -67,13 +76,12 @@ p{
 }
 
 /* Rendre les éléments interactifs visibles au passage de la souris */
-
-a:focus, a:hover{
-    border: 3px solid #424242;
+.icon-md:focus, .icon-md:hover{
+    transform: scale(1.5);
+    transition: 0.2s;
 }
-
 button:focus, button:hover{
-    border: 3px solid #424242;
+    border: 3px solid black;
 }
 
 /* Augmentation espace autour des liens du footer en version mobile */
